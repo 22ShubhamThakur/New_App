@@ -15,7 +15,7 @@ mysql = MySQL(app)
 
 @app.route('/hello')
 def hello():
-    return "Hello, World!"
+    return render_template('Hello.html', users=users)
 
 @app.route('/users')
 def users():
@@ -34,8 +34,9 @@ def new_user():
         try:
             name = request.form['name']
             email = request.form['email']
+            role = request.form['role']
             cur = mysql.connection.cursor()
-            cur.execute("INSERT INTO users (name, email) VALUES (%s, %s)", (name, email))
+            cur.execute("INSERT INTO users (name, email,role) VALUES (%s, %s, %s)", (name, email, role))
             mysql.connection.commit()
             cur.close()
             return redirect('/users')
