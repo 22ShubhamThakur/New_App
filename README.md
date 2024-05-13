@@ -99,4 +99,4 @@ Command--> Git init
 ## Output3
 ![new_user](https://github.com/22ShubhamThakur/New_App/blob/steptech_assignment/Output/output3.png?raw=true)
 ## Output4
-![users/id](https://github.com/22ShubhamThakur/New_App/blob/steptech_assignment/Output/Output4.png?raw=true)
+![users/id](https://github.com/22ShubhamThakur/New_App/blob/steptech_assignment/Output/output4.png?raw=true)
