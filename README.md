@@ -28,10 +28,10 @@
 ## Configuration to connect Flask with MySql.
 
 #### MySQL configurations
-app.config['MYSQL_DATABASE_HOST'] = 'Your hostname'
-app.config['MYSQL_DATABASE_USER'] = 'your_username'
-app.config['MYSQL_DATABASE_PASSWORD'] = 'your_password'
-app.config['MYSQL_DATABASE_DB'] = 'your_database_name'
+app.config['MYSQL_DATABASE_HOST'] = 'Your hostname'<br>
+app.config['MYSQL_DATABASE_USER'] = 'your_username'<br>
+app.config['MYSQL_DATABASE_PASSWORD'] = 'your_password'<br>
+app.config['MYSQL_DATABASE_DB'] = 'your_database_name'<br>
 
 ### To Run the apllication, follow these steps:
 1.Make sure you are in the project directory and the virtual environment is activated (if you created one).
