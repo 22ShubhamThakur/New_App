@@ -76,9 +76,9 @@ Command --> Git remote add origin https://github.com/22ShubhamThakur/New_App.
 Command--> Git branch -m steptech_assignment.
 
 4. Implement your changes, commit them, and push to your forked repository:<br>
-Command--> Git init  
-           Git add .
-           Git commit -m "Your commit message"
+Command--> Git init <br> 
+           Git add .<br>
+           Git commit -m "Your commit message"<br>
            Git push origin steptech_assignment
 
 5. Create a pull request from your feature branch to the main (or master) branch of the original repository.
