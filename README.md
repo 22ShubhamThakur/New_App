@@ -41,10 +41,10 @@ app.config['MYSQL_DATABASE_DB'] = 'your_database_name'<br>
 3.Open a web browser and navigate to http://localhost:5000 to access the Flask application. You should see the application running in the browser.
 
 ### Database Schema {Sql queries used in Task-2(c)}
-1. To create a database with the name "users":- 
+1. To create a database with the name "users":-<br> 
    Query --> CREATE DATABASE users;
 
-2. To create a table with the name "users":-
+2. To create a table with the name "users":-<br>
   Query--> CREATE TABLE users (
                 id INT AUTO_INCREMENT PRIMARY KEY,
                 name VARCHAR(255),
@@ -52,16 +52,16 @@ app.config['MYSQL_DATABASE_DB'] = 'your_database_name'<br>
                 role VARCHAR(255)
                 ); 
 
-3. For inserting data into users table:-
+3. For inserting data into users table:-<br>
   Query--> INSERT INTO users (name, email, role) VALUES
             ('Shubham', 'shubham@gmail.com', 'Admin'),
             ('Sakshi', 'sak@gmail.com', 'java_Developer'),
             ('Virat', 'viru@gmail.com', 'ITsupport');
 
-4. For retrieve all users from the "users" table:-
+4. For retrieve all users from the "users" table:-<br>
   Query--> SELECT * FROM users;
 
-5. For retrieve a specific user by their ID:-
+5. For retrieve a specific user by their ID:-<br>
   Query--> SELECT * FROM users WHERE id = 1;
 
 
