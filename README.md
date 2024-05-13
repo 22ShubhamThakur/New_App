@@ -93,7 +93,7 @@ Command--> Git init
 
 
 ## Output1
-![hello](https://github.com/22ShubhamThakur/New_App/blob/steptech_assignment/Output/output1.png?raw=true)
+![hello](https://github.com/22ShubhamThakur/New_App/blob/steptech_assignment/Output/Output1.png?raw=true)
 ## Output2
 ![Users](https://github.com/22ShubhamThakur/New_App/blob/steptech_assignment/Output/Output2.png?raw=true)
 ## Output3
