@@ -19,9 +19,9 @@
 
 2.Open a terminal or command prompt on your computer and navigate to the Directory Where You Want to Clone the Repository.
 
-3.Create a virtual environment [optional but recommended]. Run the following command: - Syntax : python3 -m venv flaskenv
+3.Create a virtual environment [optional but recommended]. Run the following command: - <br> Syntax : python3 -m venv flaskenv
 
-4.Activate the virtual environment. Run the appropriate command: - Syntax : flaskenv\Scripts\activate.bat
+4.Activate the virtual environment. Run the appropriate command: -<br> Syntax : flaskenv\Scripts\activate.bat
 
 5.Run the following command to install the required dependencies:pip install -r requirements.txt.
 
@@ -67,15 +67,15 @@ app.config['MYSQL_DATABASE_DB'] = 'your_database_name'<br>
 
 ### GIT WORKFLOW
 
-1. Fork the repository to your own GitHub account.
+1. Fork the repository to your own GitHub account.<br>
 Command --> Git remote add origin https://github.com/22ShubhamThakur/New_App.
 
 2. Clone your forked repository to your local machine.
 
-3. Create a new branch for your changes:
+3. Create a new branch for your changes:<br>
 Command--> Git branch -m steptech_assignment.
 
-4. Implement your changes, commit them, and push to your forked repository:
+4. Implement your changes, commit them, and push to your forked repository:<br>
 Command--> Git init  
            Git add .
            Git commit -m "Your commit message"
