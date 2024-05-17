@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect,url_for
 from flask_mysqldb import MySQL
 from MySQLdb import MySQLError
 
@@ -56,6 +56,44 @@ def user_details(user_id):
             return render_template('user_details.html', user=user)
         else:
             return "User not found", 404
+    except Exception as e:
+        return str(e), 500
+
+@app.route('/edit_user/<int:user_id>', methods=['GET', 'POST'])
+def edit_user(user_id):
+    if request.method == 'POST':
+        try:
+            name = request.form['name']
+            email = request.form['email']
+            role = request.form['role']
+            cur = mysql.connection.cursor()
+            cur.execute("UPDATE users SET name=%s, email=%s, role=%s WHERE id=%s", (name, email, role, user_id))
+            mysql.connection.commit()
+            cur.close()
+            return redirect(url_for('users'))
+        except Exception as e:
+            return str(e), 500
+    else:
+        try:
+            cur = mysql.connection.cursor()
+            cur.execute("SELECT * FROM users WHERE id = %s", (user_id,))
+            user = cur.fetchone()
+            cur.close()
+            if user:
+                return render_template('edit_user.html', user=user)
+            else:
+                return "User not found", 404
+        except Exception as e:
+            return str(e), 500
+
+@app.route('/delete_user/<int:user_id>', methods=['POST'])
+def delete_user(user_id):
+    try:
+        cur = mysql.connection.cursor()
+        cur.execute("DELETE FROM users WHERE id = %s", (user_id,))
+        mysql.connection.commit()
+        cur.close()
+        return redirect(url_for('users'))
     except Exception as e:
         return str(e), 500
 
