@@ -64,6 +64,12 @@ app.config['MYSQL_DATABASE_DB'] = 'your_database_name'<br>
 5. For retrieve a specific user by their ID:-<br>
   Query--> SELECT * FROM users WHERE id = 1;
 
+6.For delete a specific user by their ID:-<br>
+Query-->DELETE FROM users WHERE id = 3;
+
+7.For modify a specific user:-<br>
+Query:--> UPDATE users SET name=Shubham, email=shubh@gmail.com, role=Developer WHERE id=1;
+
 
 ### GIT WORKFLOW
 
